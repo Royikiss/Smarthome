@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o CMakeFiles/RoyiSmartHome.dir/src/net.c.o CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.c.o -o RoyiSmartHome  -lpthread 

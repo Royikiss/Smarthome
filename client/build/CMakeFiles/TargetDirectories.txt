@@ -1,0 +1,3 @@
+/home/royi/SmartHome/client/build/CMakeFiles/RoyiSmartHome.dir
+/home/royi/SmartHome/client/build/CMakeFiles/edit_cache.dir
+/home/royi/SmartHome/client/build/CMakeFiles/rebuild_cache.dir
