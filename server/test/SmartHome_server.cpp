@@ -78,7 +78,7 @@ int main() {
             for (int i = 0; i < nfds; ++i) {
                 if (events[i].events & EPOLLIN) {
                     // 如果有请求进入，添加任务到线程池
-                    pool.add_task(events_handle, events[i].data.fd);
+                    pool.add_task(events_handle, events[i].data.fd, u2f, f2u);
                 }
             }
         }

@@ -8,6 +8,12 @@
 #ifndef _SERVER_H
 #define _SERVER_H
 
+#include <map>
+#include <string>
+#include "datatype.h"
+
+void handle_ctl()
+
 void signalHandler(int signum);
 
 void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u);

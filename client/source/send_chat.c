@@ -26,16 +26,20 @@ void send_chat() {
 	    struct SmhMsg tmpmsg;
 	    tmpmsg = chat_msg;
 		//分析指令，发送相应的包
+        // 如果是私聊
         if (tmpmsg.msg[0] == '@') {
             strcpy(tmpmsg.name, strtok(tmpmsg.msg + 1, " "));
             tmpmsg.type = SMH_MSG;
             send(sockfd, (void *)&tmpmsg, sizeof(tmpmsg), 0);
         } else {
+            // 不是私聊，是控制信息
 		    tmpmsg.ctl = parse_ctl(tmpmsg.msg);
             if (tmpmsg.ctl.action == -1) {
+                // 群聊信息
                 tmpmsg.type = SMH_WALL;
                 send(sockfd, (void *)&tmpmsg, sizeof(tmpmsg), 0);
             } else {
+                // 设备控制信息
                 tmpmsg.type = SMH_CTL;
                 send(sockfd, (void *)&tmpmsg, sizeof(tmpmsg), 0);
             }

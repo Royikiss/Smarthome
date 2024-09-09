@@ -24,6 +24,7 @@ void signalHandler(int signum) {
     exit(signum);  // 终止父进程
 }
 
+
 void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u) {
     SmhMsg tmessage;
     ssize_t recv_size = 0;
@@ -36,14 +37,40 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
             }
         } else if (tmessage.type & SMH_WALL) {
             // 公告
-
+            for (std::map<std::string, int>::iterator it = u2f.begin(); it != u2f.end(); ++it) {
+                send(it->second, (void *)&tmessage, sizeof(tmessage), 0);
+            }
         } else if (tmessage.type & SMH_CTL) {
             // 控制信息
 
         } else if (tmessage.type & SMH_FIN) {
             // 退出信息
+            std::string sender_name = f2u[sockfd];
+            // 在 MySQL 中修改该用户的状态为未登录
+            try {
+                sql::mysql::MySQL_Driver *driver;
+                sql::Connection *con;
+                sql::PreparedStatement *pstmt;
 
+                driver = sql::mysql::get_mysql_driver_instance();
+                con = driver->connect("tcp://127.0.0.1:3306", "royi", "xXJiaJiaJia123");
+                con->setSchema("SmartHome");
 
+                // 更新登录状态，设置 state 为 0 表示用户下线
+                pstmt = con->prepareStatement("UPDATE SmartHomeusr SET state = ? WHERE name = ?");
+                pstmt->setInt(1, 0);  // 设置状态为未登录
+                pstmt->setString(2, sender_name.c_str());
+                pstmt->executeUpdate();
+
+                delete pstmt;
+                delete con;
+            } catch (sql::SQLException &e) {
+                std::cerr << "MySQL error: " << e.what() << std::endl;
+            }
+            // 关闭连接并退出
+            u2f.erase(sender_name);
+            f2u.erase(sockfd);
+            close(sockfd);
         }
     }
     return ;
