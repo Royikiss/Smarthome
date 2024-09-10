@@ -12,13 +12,13 @@
 #include <string>
 #include "datatype.h"
 
-void handle_ctl()
+void handle_ctl(SmhMsg, std::map<int, std::string> &);
 
-void signalHandler(int signum);
+void signalHandler(int);
 
-void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u);
+void events_handle(int, std::map<std::string, int> &, std::map<int, std::string> &);
 
-void loginFunction(int bridge, int client_fd);
+void loginFunction(int, int);
 
 
 #endif

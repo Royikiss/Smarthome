@@ -6,6 +6,7 @@
  ************************************************************************/
 
 #include "../include/head.h"
+#include <mysql_driver.h>
 #include "../include/server.h"
 
 extern int slave_reactor_pid;
@@ -42,7 +43,7 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
             }
         } else if (tmessage.type & SMH_CTL) {
             // 控制信息
-
+            handle_ctl(tmessage, f2u);
         } else if (tmessage.type & SMH_FIN) {
             // 退出信息
             std::string sender_name = f2u[sockfd];
@@ -190,3 +191,129 @@ void loginFunction(int bridge, int client_fd) {
     return ;
 }
 
+void handle_ctl(SmhMsg &tmessage, std::map<int, std::string> &f2u) {
+    try {
+        sql::mysql::MySQL_Driver *driver;                       // mysql接口
+        sql::Connection *con;
+        sql::PreparedStatement *pstmt;
+        sql::ResultSet *res;
+
+        driver = sql::mysql::get_mysql_driver_instance();
+        con = driver->connect("tcp://127.0.0.1:3306", "royi", "xXJiaJiaJia123");
+        con->setSchema("SmartHome");
+        
+        std::string username = tmessage.name;
+        
+        switch(tmessage.ctl.action) {
+            case ACTION_GET_DEVICES : {
+                pstmt = con->prepareStatement("SELECT id, name, state, type FROM devices WHERE `from` = ?");
+                pstmt->setString(1, username.c_str());
+                res = pstmt->executeQuery();
+
+                std::stringstream device_info;
+                device_info << "当前设备有：";
+                
+                while (res->next()) {
+                    int id = res->getInt("id");
+                    std::string name = res->getString("name");
+                    std::string state = res->getString("state");
+                    std::string type = res->getString("type");
+
+                    device_info << "<" << id << ".";
+                    if (type == "LIGHT") {
+                        device_info << "💡";
+                    } else if (type == "SWITCH") {
+                        device_info << "🔑";
+                    } else if (type == "THERMOSTAT") {
+                        device_info << "🌡️";
+                    } else {}
+                    
+                    device_info << "> [" << name << ":";
+                    if (state == "ON") {
+                        device_info << "开 → ✅";
+                    } else if (state == "OFF") {
+                        device_info << "关 → ❌";
+                    } else if (state == "STANDBY") {
+                        device_info << "待机 → ⏸";
+                    } else {
+                        device_info << "未知状态 → ❓";
+                    } 
+                    device_info << "] ";
+                }
+                strncpy(tmessage.msg, device_info.str().c_str(), MAX_MSG - 1);
+                tmessage.msg[MAX_MSG - 1] = '\0';  // 确保消息以 '\0' 结尾
+                delete res;
+                delete pstmt;
+                break;
+            }
+            case ACTION_UPDATE_DEVICE: {
+                // 更新设备状态
+                int device_id = tmessage.ctl.dev.device_id;
+                enum device_state new_state = tmessage.ctl.dev.state;
+                
+                pstmt = con->prepareStatement("UPDATE devices SET state = ? WHERE id = ? AND `from` = ?");
+
+                // 根据设备状态设置数据库中的 state 字段
+                if (new_state == DEVICE_STATE_ON) {
+                    pstmt->setString(1, "ON");
+                } else if (new_state == DEVICE_STATE_OFF) {
+                    pstmt->setString(1, "OFF");
+                } else if (new_state == DEVICE_STATE_STANDBY) {
+                    pstmt->setString(1, "STANDBY");
+                }
+
+                pstmt->setInt(2, device_id);
+                pstmt->setString(3, username.c_str());
+                pstmt->executeUpdate();
+
+                delete pstmt;
+                break;
+            }
+            case ACTION_ADD_DEVICE: {
+                // 添加新设备
+                struct device new_device = tmessage.ctl.dev;
+                pstmt = con->prepareStatement("INSERT INTO devices (name, `from`, state, type) VALUES (?, ?, ?, ?)");
+
+                pstmt->setString(1, new_device.device_name);
+                pstmt->setString(2, username.c_str());
+
+                // 根据设备状态设置数据库中的 state 字段
+                if (new_device.state == DEVICE_STATE_ON) {
+                    pstmt->setString(3, "ON");
+                } else if (new_device.state == DEVICE_STATE_OFF) {
+                    pstmt->setString(3, "OFF");
+                } else if (new_device.state == DEVICE_STATE_STANDBY) {
+                    pstmt->setString(3, "STANDBY");
+                }
+
+                // 设置设备类型
+                pstmt->setString(4, (new_device.type == DEVICE_LIGHT) ? "LIGHT" : 
+                                       (new_device.type == DEVICE_SWITCH) ? "SWITCH" : "THERMOSTAT");
+
+                pstmt->executeUpdate();
+                delete pstmt;
+                break;
+            }
+            case ACTION_DEL_DEVICE: {
+                // 删除设备
+                int device_id = tmessage.ctl.dev.device_id;
+
+                pstmt = con->prepareStatement("DELETE FROM devices WHERE id = ? AND `from` = ?");
+                pstmt->setInt(1, device_id);
+                pstmt->setString(2, username.c_str());
+                pstmt->executeUpdate();
+
+                delete pstmt;
+                break;
+            }
+            default: {
+                std::cerr << "Unknown action type" << std::endl;
+                break;
+            }
+        }
+        delete con;
+    }  catch (sql::SQLException &e) {
+        std::cerr << "MySQL error: " << e.what() << std::endl;
+    }
+    return ;
+}
