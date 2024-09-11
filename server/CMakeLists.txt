@@ -19,7 +19,7 @@ cmake_minimum_required(VERSION 3.10)
 project(RoyiSmartHome)
 
 # 添加宏定义
-#add_definitions(-D_D)
+add_definitions(-D_D)
 
 # 添加头文件路径
 include_directories(include)

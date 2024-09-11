@@ -12,7 +12,7 @@ namespace SH {
 #include "./color.h"
 #ifdef _D
 
-#define DBG(fmt, arg...) printf("["BLUE"DBG"NONE"]:" fmt, ##arg);
+#define DBG(fmt, arg...) printf(L_BLUE("[===DBG===]: ") fmt, ##arg )
 
 #else
 

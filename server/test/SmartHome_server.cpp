@@ -28,15 +28,16 @@ int main() {
     }
 
     if (slave_reactor_pid == 0) {
+        DBG("从反应堆: 从反应堆正常启动\n");
         // 从反应堆
         close(bridge[1]);
         int clients[MAX_EVENTS];                    // 哈希,记录当前打开的文件描述符,0号位置记录最大值
-        Cgo::thread_pool pool(6); 
-        epoll_event ev, events[MAX_EVENTS];
+        Cgo::thread_pool pool(6);                   // 线程池
+        epoll_event ev, events[MAX_EVENTS];         // 事件
         UsrMsg tusg;                                // 从主反应堆发来的数据
         std::map<std::string, int> u2f;             // 用户名与文件描述符的对应关系
         std::map<int, std::string> f2u;             // 文件描述符与用户名的对应关系
-        int epoll_fd = epoll_create1(0);
+        int epoll_fd = epoll_create1(0);            // 事件监控
         int client_fd;
 
         if (epoll_fd == -1) {
@@ -44,47 +45,61 @@ int main() {
             exit(EXIT_FAILURE);
         }
 
+        make_nonblock(bridge[0]);
+
+        // 监听 bridge[0]，用于接收主反应堆发来的文件描述符
+        ev.events = EPOLLIN;
+        ev.data.fd = bridge[0];
+        if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, bridge[0], &ev) == -1) {
+            perror("epoll_ctl failed for bridge[0]");
+            exit(EXIT_FAILURE);
+        }
+
         while(true) {
-            client_fd = recv_UsrMsg(bridge[0], tusg);
-            if (client_fd < 0) {
-                std::cout << "文件描述符获取失败" << std::endl;
-            } else {
-                std::cout << "收到文件描述符成功: [" << client_fd << "]" << std::endl; 
-
-                clients[client_fd] = true;           // 添加到监控列表中
-                u2f[tusg.username] = client_fd;      // 建立文件描述符和用户名的对应关系
-                f2u[client_fd] = tusg.username;
-
-                if ((make_nonblock(client_fd)) < 0) {
-                    perror("make_nonblock");
-                    exit(EXIT_FAILURE);
-                }
-
-                // 添加事件与注册事件
-                ev.events = EPOLLIN | EPOLLET;
-                ev.data.fd = client_fd;
-                if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_fd, &ev) == -1) {
-                    perror("epoll_ctl failed");
-                    continue;
-                }
-            }
-
             int nfds = epoll_wait(epoll_fd, events, 10, -1);
             if (nfds == -1) {
                 perror("epoll_wait failed");
                 continue;
             }
-
             for (int i = 0; i < nfds; ++i) {
-                if (events[i].events & EPOLLIN) {
-                    // 如果有请求进入，添加任务到线程池
-                    pool.add_task(events_handle, events[i].data.fd, u2f, f2u);
+                int event_fd = events[i].data.fd;
+
+                if (event_fd == bridge[0] && (events[i].events & EPOLLIN)) {
+                    // 从 bridge[0] 接收文件描述符
+                    client_fd = recv_UsrMsg(bridge[0], tusg);
+                    if (client_fd < 0) {
+                        std::cout << "文件描述符获取失败" << std::endl;
+                    } else {
+                        std::cout << "收到文件描述符成功: [" << client_fd << "]" << std::endl; 
+
+                        clients[client_fd] = true;           // 添加到监控列表中
+                        u2f[tusg.username] = client_fd;      // 建立文件描述符和用户名的对应关系
+                        f2u[client_fd] = tusg.username;
+
+                        if ((make_nonblock(client_fd)) < 0) {
+                            perror("make_nonblock");
+                            exit(EXIT_FAILURE);
+                        }
+
+                        // 添加客户端 socket 到 epoll 监控
+                        ev.events = EPOLLIN | EPOLLET;
+                        ev.data.fd = client_fd;
+                        if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_fd, &ev) == -1) {
+                            perror("epoll_ctl failed");
+                            continue;
+                        }
+                    }
+                } 
+                else if (events[i].events & EPOLLIN) {
+                    // 处理客户端请求
+                    DBG("从反应堆: 会话 [%d] 出现请求, 添加到任务队列\n", event_fd);
+                    pool.add_task(events_handle, event_fd, u2f, f2u);
                 }
             }
         }
     } else {
-
         // 主反应堆
+        DBG("主反应堆启动中...\n");
         close(bridge[0]);
         Cgo::thread_pool login_pool(3);
         int server, client;
@@ -92,7 +107,8 @@ int main() {
             perror("create_socket");
             exit(EXIT_FAILURE);
         }
-
+        
+        DBG("主反应堆:  正常接收登陆请求...\n");
         while (true) {
             sockaddr_in client_addr;
             memset(&client_addr, 0, sizeof(client_addr));

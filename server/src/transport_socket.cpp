@@ -6,9 +6,8 @@
  ************************************************************************/
 
 #include "../include/head.h"
-#include "../include/transport_socket.h"
 
-void send_fd(int socket, const UsrMsg &usr_msg) {
+void send_UsrMsg(int socket, const UsrMsg &usr_msg) {
     msghdr message;
     iovec iov[1];
     cmsghdr *ctrl_msg = NULL;
@@ -40,7 +39,7 @@ void send_fd(int socket, const UsrMsg &usr_msg) {
     }
 }
 
-int recv_fd(int socket, UsrMsg &usr_msg) {
+int recv_UsrMsg(int socket, UsrMsg &usr_msg) {
     msghdr message;
     iovec iov[1];
     cmsghdr *ctrl_msg = NULL;
