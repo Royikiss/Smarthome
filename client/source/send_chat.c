@@ -12,6 +12,10 @@
 extern int sockfd;
 extern WINDOW *input_sub, *input_win;
 extern struct SmhMsg chat_msg;
+extern char *S_IP;                         // 服务器端IP地址
+extern char *S_PORT;                       // 服务器端端口地址
+extern char *S_NAME;                       // 用户名
+extern char *S_PASSWD;                     // 密码
 
 void send_chat() {
     echo();
@@ -25,7 +29,7 @@ void send_chat() {
     if (strlen(chat_msg.msg)) {
 	    struct SmhMsg tmpmsg;
 	    tmpmsg = chat_msg;
-		//分析指令，发送相应的包
+		// 分析指令，发送相应的包
         // 如果是私聊
         if (tmpmsg.msg[0] == '@') {
             strcpy(tmpmsg.name, strtok(tmpmsg.msg + 1, " "));
@@ -36,10 +40,12 @@ void send_chat() {
 		    tmpmsg.ctl = parse_ctl(tmpmsg.msg);
             if (tmpmsg.ctl.action == -1) {
                 // 群聊信息
+                strcpy(tmpmsg.name, S_NAME);
                 tmpmsg.type = SMH_WALL;
                 send(sockfd, (void *)&tmpmsg, sizeof(tmpmsg), 0);
             } else {
                 // 设备控制信息
+                strcpy(tmpmsg.name, S_NAME);
                 tmpmsg.type = SMH_CTL;
                 send(sockfd, (void *)&tmpmsg, sizeof(tmpmsg), 0);
             }

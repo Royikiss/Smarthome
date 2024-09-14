@@ -24,7 +24,7 @@ void signalHandler(int signum) {
     exit(signum);  // 终止父进程
 }
 
-void handle_ctl(SmhMsg &tmessage, std::map<int, std::string> &f2u) {
+void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
     try {
         sql::mysql::MySQL_Driver *driver;                       // mysql接口
         sql::Connection *con;
@@ -36,9 +36,10 @@ void handle_ctl(SmhMsg &tmessage, std::map<int, std::string> &f2u) {
         con->setSchema("SmartHome");
         
         std::string username = tmessage.name;
-        
+       
         switch(tmessage.ctl.action) {
             case ACTION_GET_DEVICES : {
+                // 得到设备信息
                 pstmt = con->prepareStatement("SELECT id, name, state, type FROM devices WHERE `from` = ?");
                 pstmt->setString(1, username.c_str());
                 res = pstmt->executeQuery();
@@ -75,6 +76,7 @@ void handle_ctl(SmhMsg &tmessage, std::map<int, std::string> &f2u) {
                 }
                 strncpy(tmessage.msg, device_info.str().c_str(), MAX_MSG - 1);
                 tmessage.msg[MAX_MSG - 1] = '\0';  // 确保消息以 '\0' 结尾
+                send(sockfd, (void *)&tmessage, sizeof(tmessage), 0);
                 delete res;
                 delete pstmt;
                 break;
@@ -124,6 +126,7 @@ void handle_ctl(SmhMsg &tmessage, std::map<int, std::string> &f2u) {
                                        (new_device.type == DEVICE_SWITCH) ? "SWITCH" : "THERMOSTAT");
 
                 pstmt->executeUpdate();
+                DBG("检测到用户" L_YELLOW("%s") "添加了一个" L_BLUE("%s") "\n", username.c_str(), new_device.device_name);
                 delete pstmt;
                 break;
             }
@@ -172,7 +175,7 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
         } else if (tmessage.type & SMH_CTL) {
             // 控制信息
             DBG("子反应堆[事务处理]: 触发设备控制操作,转向设备中心处理...\n");
-            handle_ctl(tmessage, f2u);
+            handle_ctl(sockfd, tmessage, f2u);
         } else if (tmessage.type & SMH_FIN) {
             DBG("子反应堆[事务处理]: 用户 [%s] 申请退出,执行数据同步操作...\n", f2u[sockfd].c_str());
             // 退出信息

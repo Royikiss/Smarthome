@@ -19,10 +19,10 @@ WINDOW *message_win, *message_sub,  *info_win, *input_win, *info_sub;
 int message_num = 0;
 struct User usrinfo;
 struct SmhMsg chat_msg;
-char *S_IP;
-char *S_PORT;
-char *S_NAME;
-char *S_PASSWD;
+char *S_IP;                         // 服务器端IP地址
+char *S_PORT;                       // 服务器端端口地址
+char *S_NAME;                       // 用户名
+char *S_PASSWD;                     // 密码
 char _Server_Tmp_[VALUE_SIZE];
 char _Server_Value_[VARIABLE_NUM][VALUE_SIZE];
 
@@ -71,7 +71,6 @@ int main() {
     // 创建一个线程去执行信息的接收
     pthread_t recv_tid;
     pthread_create(&recv_tid, NULL, client_recv, NULL);
-    
 
     //循环输入缓冲区,用作信息的输入输出
     while (1) {

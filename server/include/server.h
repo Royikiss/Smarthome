@@ -17,7 +17,7 @@ void events_handle(int, std::map<std::string, int> &, std::map<int, std::string>
 
 void loginFunction(int, int);
 
-void handle_ctl(SmhMsg &, std::map<int, std::string> &);
+void handle_ctl(int, SmhMsg &, std::map<int, std::string> &);
 
 
 #endif
