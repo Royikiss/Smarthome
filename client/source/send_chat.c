@@ -24,7 +24,7 @@ void send_chat() {
     chat_msg.type = SMH_WALL;
     curs_set(1);
     w_gotoxy_puts(input_win, 1, 1, "Input Message : ");
-    mvwscanw(input_win, 2, 10, "%[^\\n]s", chat_msg.msg);
+    mvwscanw(input_win, 2, 10, "%[^\n]s", chat_msg.msg);
     //判断如果读入的信息非空，则发送到服务端
     if (strlen(chat_msg.msg)) {
 	    struct SmhMsg tmpmsg;
