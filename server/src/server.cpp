@@ -85,6 +85,7 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
                 // 更新设备状态
                 int device_id = tmessage.ctl.dev.device_id;
                 enum device_state new_state = tmessage.ctl.dev.state;
+                std::stringstream device_info;
                 
                 pstmt = con->prepareStatement("UPDATE devices SET state = ? WHERE id = ? AND `from` = ?");
 
@@ -97,9 +98,15 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
                     pstmt->setString(1, "STANDBY");
                 }
 
+                device_info << "更新设备状态成功";
+
                 pstmt->setInt(2, device_id);
                 pstmt->setString(3, username.c_str());
                 pstmt->executeUpdate();
+
+                strncpy(tmessage.msg, device_info.str().c_str(), MAX_MSG - 1);
+                tmessage.msg[MAX_MSG - 1] = '\0';  // 确保消息以 '\0' 结尾
+                send(sockfd, (void *)&tmessage, sizeof(tmessage), 0);
 
                 delete pstmt;
                 break;
@@ -107,6 +114,7 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
             case ACTION_ADD_DEVICE: {
                 // 添加新设备
                 struct device new_device = tmessage.ctl.dev;
+                std::stringstream device_info;
                 pstmt = con->prepareStatement("INSERT INTO devices (name, `from`, state, type) VALUES (?, ?, ?, ?)");
 
                 pstmt->setString(1, new_device.device_name);
@@ -126,18 +134,33 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
                                        (new_device.type == DEVICE_SWITCH) ? "SWITCH" : "THERMOSTAT");
 
                 pstmt->executeUpdate();
+
                 DBG("检测到用户" L_YELLOW("%s") "添加了一个" L_BLUE("%s") "\n", username.c_str(), new_device.device_name);
+
+                device_info << "成功添加了一个" << new_device.device_name;
+
+                strncpy(tmessage.msg, device_info.str().c_str(), MAX_MSG - 1);
+                tmessage.msg[MAX_MSG - 1] = '\0';  // 确保消息以 '\0' 结尾
+                send(sockfd, (void *)&tmessage, sizeof(tmessage), 0);
+                
                 delete pstmt;
                 break;
             }
             case ACTION_DEL_DEVICE: {
                 // 删除设备
                 int device_id = tmessage.ctl.dev.device_id;
+                std::stringstream device_info;
 
                 pstmt = con->prepareStatement("DELETE FROM devices WHERE id = ? AND `from` = ?");
                 pstmt->setInt(1, device_id);
                 pstmt->setString(2, username.c_str());
                 pstmt->executeUpdate();
+
+                device_info << "成功删除";
+
+                strncpy(tmessage.msg, device_info.str().c_str(), MAX_MSG - 1);
+                tmessage.msg[MAX_MSG - 1] = '\0';  // 确保消息以 '\0' 结尾
+                send(sockfd, (void *)&tmessage, sizeof(tmessage), 0);
 
                 delete pstmt;
                 break;
