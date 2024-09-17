@@ -296,10 +296,10 @@ STRINGIFY	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRIN
 STRINGIFY	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
 STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
 STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
-S_IP	include/common.h	/^char *S_IP;$/;"	v	typeref:typename:char *
-S_NAME	include/common.h	/^char *S_NAME;$/;"	v	typeref:typename:char *
-S_PASSWD	include/common.h	/^char *S_PASSWD;$/;"	v	typeref:typename:char *
-S_PORT	include/common.h	/^char *S_PORT;$/;"	v	typeref:typename:char *
+S_IP	tests/client_window.c	/^char *S_IP;                         \/\/ 服务器端IP地址$/;"	v	typeref:typename:char *
+S_NAME	tests/client_window.c	/^char *S_NAME;                       \/\/ 用户名$/;"	v	typeref:typename:char *
+S_PASSWD	tests/client_window.c	/^char *S_PASSWD;                     \/\/ 密码$/;"	v	typeref:typename:char *
+S_PORT	tests/client_window.c	/^char *S_PORT;                       \/\/ 服务器端端口地址$/;"	v	typeref:typename:char *
 Show_Message	include/common.h	/^#define Show_Message(/;"	d
 SmhMsg	include/datatype.h	/^struct SmhMsg{$/;"	s
 UNDERLINE	include/color.h	/^#define UNDERLINE /;"	d
@@ -321,8 +321,8 @@ _NET_H__	include/net.h	/^#define _NET_H__$/;"	d
 _NON_BLOCKING_H__	include/Non-blocking.h	/^#define _NON_BLOCKING_H__$/;"	d
 _SEND_CHAT_H__	include/send_chat.h	/^#define _SEND_CHAT_H__$/;"	d
 _SERVER_VALUE	source/common.c	/^int _SERVER_VALUE = 0;$/;"	v	typeref:typename:int
-_Server_Tmp_	include/common.h	/^char _Server_Tmp_[VALUE_SIZE];$/;"	v	typeref:typename:char[]
-_Server_Value_	include/common.h	/^char _Server_Value_[VARIABLE_NUM][VALUE_SIZE];$/;"	v	typeref:typename:char[][]
+_Server_Tmp_	tests/client_window.c	/^char _Server_Tmp_[VALUE_SIZE];$/;"	v	typeref:typename:char[]
+_Server_Value_	tests/client_window.c	/^char _Server_Value_[VARIABLE_NUM][VALUE_SIZE];$/;"	v	typeref:typename:char[][]
 _THREAD_POOL_H__	include/thread_pool.h	/^#define _THREAD_POOL_H__$/;"	d
 __has_include	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
 __has_include	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
@@ -390,7 +390,6 @@ main	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, arg
 main	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
 main	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main	tests/client_window.c	/^int main() {$/;"	f	typeref:typename:int
-main	tests/test.c	/^int main(int argc, char *argv[]) {$/;"	f	typeref:typename:int
 make_block	source/Non-blocking.c	/^int make_block(int fd) {$/;"	f	typeref:typename:int
 make_nonblock	source/Non-blocking.c	/^int make_nonblock(int fd) {$/;"	f	typeref:typename:int
 message_num	tests/client_window.c	/^int message_num = 0;$/;"	v	typeref:typename:int

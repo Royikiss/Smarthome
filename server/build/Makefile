@@ -153,6 +153,30 @@ src/Non-blocking.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoyiSmartHome.dir/build.make CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.s
 .PHONY : src/Non-blocking.cpp.s
 
+src/config.o: src/config.cpp.o
+.PHONY : src/config.o
+
+# target to build an object file
+src/config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoyiSmartHome.dir/build.make CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o
+.PHONY : src/config.cpp.o
+
+src/config.i: src/config.cpp.i
+.PHONY : src/config.i
+
+# target to preprocess a source file
+src/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoyiSmartHome.dir/build.make CMakeFiles/RoyiSmartHome.dir/src/config.cpp.i
+.PHONY : src/config.cpp.i
+
+src/config.s: src/config.cpp.s
+.PHONY : src/config.s
+
+# target to generate assembly for a file
+src/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoyiSmartHome.dir/build.make CMakeFiles/RoyiSmartHome.dir/src/config.cpp.s
+.PHONY : src/config.cpp.s
+
 src/net.o: src/net.cpp.o
 .PHONY : src/net.o
 
@@ -261,6 +285,9 @@ help:
 	@echo "... src/Non-blocking.o"
 	@echo "... src/Non-blocking.i"
 	@echo "... src/Non-blocking.s"
+	@echo "... src/config.o"
+	@echo "... src/config.i"
+	@echo "... src/config.s"
 	@echo "... src/net.o"
 	@echo "... src/net.i"
 	@echo "... src/net.s"

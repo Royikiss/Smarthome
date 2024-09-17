@@ -14,9 +14,23 @@
 pid_t slave_reactor_pid;
 int bridge[2]; // 父子进程套接字通讯域套接字
 
-int main() {
+// 环境变量,从配置文件获得
+std:: map<std::string, std::string> Envir;  
+
+void init() {
     // 规范服务器退出信号
     signal(SIGINT, signalHandler);
+    Envir["MYSQLUSR"] = getConfig("../config/SmartHome.config", "MYSQLUSR");
+    Envir["MYSQLPASSWORD"] = getConfig("../config/SmartHome.config", "MYSQLPASSWORD");
+    std::cout << "MYSQLUSR = [" << Envir["MYSQLUSR"] << "]" << std::endl;
+    std::cout << "MYSQLPASSWORD = [" << Envir["MYSQLPASSWORD"] << "]" << std::endl;
+    return ; 
+}
+
+int main() {
+
+    init();
+
     if ((socketpair(AF_UNIX, SOCK_STREAM, 0, bridge)) < 0) {
         perror("socketpair");
         exit(EXIT_FAILURE);

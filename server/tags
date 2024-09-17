@@ -40,11 +40,11 @@ ARCHITECTURE_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/
 ARCHITECTURE_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
 ARCHITECTURE_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
 BACKLOG	test/SmartHome_server.cpp	/^#define BACKLOG /;"	d	file:
-BLACK	include/DBG/color.h	/^#define BLACK /;"	d
-BLINK	include/DBG/color.h	/^#define BLINK /;"	d
-BLUE	include/DBG/color.h	/^#define BLUE /;"	d
-BOLD	include/DBG/color.h	/^#define BOLD /;"	d
-BROWN	include/DBG/color.h	/^#define BROWN /;"	d
+BLACK	include/DBG/color.h	/^#define BLACK(/;"	d
+BLINK	include/DBG/color.h	/^#define BLINK(/;"	d
+BLUE	include/DBG/color.h	/^#define BLUE(/;"	d
+BOLD	include/DBG/color.h	/^#define BOLD(/;"	d
+BROWN	include/DBG/color.h	/^#define BROWN(/;"	d
 CLEAR	include/DBG/color.h	/^#define CLEAR /;"	d
 CLRLINE	include/DBG/color.h	/^#define CLRLINE /;"	d
 CMAKE_AR	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
@@ -313,6 +313,7 @@ CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTE
 CMAKE_SYSTEM_VERSION	include/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.15.0-113-generic")$/;"	v
 CMAKE_TARGET_LINKED_INFO_FILES	build/CMakeFiles/RoyiSmartHome.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
 CMAKE_TARGET_LINKED_INFO_FILES	include/CMakeFiles/RoyiSmartHome.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+COLOR	include/DBG/color.h	/^#define COLOR(/;"	d
 COMPILER_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
 COMPILER_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
 COMPILER_ID	include/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
@@ -399,7 +400,7 @@ CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define
 CXX_STD	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#      define CXX_STD /;"	d	file:
 CXX_STD	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
 CXX_STD	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
-CYAN	include/DBG/color.h	/^#define CYAN /;"	d
+CYAN	include/DBG/color.h	/^#define CYAN(/;"	d
 C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
 C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
 C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
@@ -420,27 +421,31 @@ DEVICE_SWITCH	include/datatype.h	/^    DEVICE_SWITCH,              \/\/ 设备�
 DEVICE_THERMOSTAT	include/datatype.h	/^    DEVICE_THERMOSTAT,          \/\/ 设备类型：恒温设备$/;"	e	enum:device_type
 EQUALS	build/Makefile	/^EQUALS = =$/;"	m
 EQUALS	include/Makefile	/^EQUALS = =$/;"	m
-GRAY	include/DBG/color.h	/^#define GRAY /;"	d
-GREEN	include/DBG/color.h	/^#define GREEN /;"	d
+Envir	test/SmartHome_server.cpp	/^std:: map<std::string, std::string> Envir;  $/;"	v	typeref:typename:std::map<std::string,std::string>
+GRAY	include/DBG/color.h	/^#define GRAY(/;"	d
+GREEN	include/DBG/color.h	/^#define GREEN(/;"	d
 HEX	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
 HEX	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 HEX	include/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
 HEX	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
-HIDE	include/DBG/color.h	/^#define HIDE /;"	d
+HIDE	include/DBG/color.h	/^#define HIDE(/;"	d
 ID_VOID_MAIN	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
 ID_VOID_MAIN	include/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
-L_BLACK	include/DBG/color.h	/^#define L_BLACK /;"	d
-L_BLUE	include/DBG/color.h	/^#define L_BLUE /;"	d
-L_CYAN	include/DBG/color.h	/^#define L_CYAN /;"	d
-L_GREEN	include/DBG/color.h	/^#define L_GREEN /;"	d
-L_PINK	include/DBG/color.h	/^#define L_PINK /;"	d
-L_RED	include/DBG/color.h	/^#define L_RED /;"	d
+L_BLACK	include/DBG/color.h	/^#define L_BLACK(/;"	d
+L_BLUE	include/DBG/color.h	/^#define L_BLUE(/;"	d
+L_BROWN	include/DBG/color.h	/^#define L_BROWN(/;"	d
+L_COLOR	include/DBG/color.h	/^#define L_COLOR(/;"	d
+L_CYAN	include/DBG/color.h	/^#define L_CYAN(/;"	d
+L_GRAY	include/DBG/color.h	/^#define L_GRAY(/;"	d
+L_GREEN	include/DBG/color.h	/^#define L_GREEN(/;"	d
+L_PINK	include/DBG/color.h	/^#define L_PINK(/;"	d
+L_RED	include/DBG/color.h	/^#define L_RED(/;"	d
+L_YELLOW	include/DBG/color.h	/^#define L_YELLOW(/;"	d
 LogRequest	include/datatype.h	/^struct  LogRequest {$/;"	s
 LogResponse	include/datatype.h	/^struct LogResponse{$/;"	s
 MAX_EVENTS	test/SmartHome_server.cpp	/^#define MAX_EVENTS /;"	d	file:
 MAX_MSG	include/datatype.h	/^#define MAX_MSG /;"	d
-NONE	include/DBG/color.h	/^#define NONE /;"	d
-PINK	include/DBG/color.h	/^#define PINK /;"	d
+PINK	include/DBG/color.h	/^#define PINK(/;"	d
 PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
 PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
 PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
@@ -457,8 +462,8 @@ PLATFORM_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  
 PLATFORM_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
 PLATFORM_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
 PLATFORM_ID	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
-RED	include/DBG/color.h	/^#define RED /;"	d
-REVERSE	include/DBG/color.h	/^#define REVERSE /;"	d
+RED	include/DBG/color.h	/^#define RED(/;"	d
+REVERSE	include/DBG/color.h	/^#define REVERSE(/;"	d
 RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
 RM	include/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
 RoyiSmartHome	CMakeLists.txt	/^add_executable(RoyiSmartHome ${SOURCE_FILES})$/;"	t
@@ -518,13 +523,14 @@ STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^
 STRINGIFY_HELPER	include/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
 STRINGIFY_HELPER	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
 SmhMsg	include/datatype.h	/^struct SmhMsg{$/;"	s
-UNDERLINE	include/DBG/color.h	/^#define UNDERLINE /;"	d
+UNDERLINE	include/DBG/color.h	/^#define UNDERLINE(/;"	d
 User	include/datatype.h	/^struct User{$/;"	s
 UsrMsg	include/transport_socket.h	/^struct UsrMsg {$/;"	s
-WHITE	include/DBG/color.h	/^#define WHITE /;"	d
-YELLOW	include/DBG/color.h	/^#define YELLOW /;"	d
+WHITE	include/DBG/color.h	/^#define WHITE(/;"	d
+YELLOW	include/DBG/color.h	/^#define YELLOW(/;"	d
 _CGO_H	include/Cgo/Cgo.h	/^#define _CGO_H$/;"	d
 _COLOR_H__	include/DBG/color.h	/^#define _COLOR_H__$/;"	d
+_CONFIG_H	include/config.h	/^#define _CONFIG_H$/;"	d
 _DATATYPE_H__	include/datatype.h	/^#define _DATATYPE_H__$/;"	d
 _DBG_H__	include/DBG/DBG.h	/^#define _DBG_H__$/;"	d
 _HEAD_H__	include/head.h	/^#define _HEAD_H__$/;"	d
@@ -605,11 +611,12 @@ events_handle	src/server.cpp	/^void events_handle(int sockfd, std::map<std::stri
 fd	include/transport_socket.h	/^    int fd;$/;"	m	struct:UsrMsg	typeref:typename:int
 flush_len	include/Cgo/CgoSocket.h	/^	len_t flush_len() override {$/;"	f	class:sockaddr	typeref:typename:len_t
 func_t	include/Cgo/CgoThreadPool.h	/^    using func_t = std::function<void()>;$/;"	t	class:task
+getConfig	src/config.cpp	/^std::string getConfig(const std::string configFile, const std::string keyWord) {$/;"	f	typeref:typename:std::string
 get_addr	include/Cgo/CgoSocket.h	/^	addr_t &get_addr() override {$/;"	f	class:sockaddr	typeref:typename:addr_t &
 get_len	include/Cgo/CgoSocket.h	/^	len_t &get_len() override {$/;"	f	class:sockaddr	typeref:typename:len_t &
 get_task	include/Cgo/CgoThreadPool.h	/^    task_t *get_task() {$/;"	f	class:thread_pool	typeref:typename:task_t *
 get_thread_num	include/Cgo/CgoThreadPool.h	/^    int get_thread_num() {$/;"	f	class:thread_pool	typeref:typename:int
-handle_ctl	src/server.cpp	/^void handle_ctl(SmhMsg &tmessage, std::map<int, std::string> &f2u) {$/;"	f	typeref:typename:void
+handle_ctl	src/server.cpp	/^void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {$/;"	f	typeref:typename:void
 help	build/Makefile	/^help:$/;"	t
 help	include/Makefile	/^help:$/;"	t
 info_arch	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
@@ -662,6 +669,7 @@ info_version_internal	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId
 info_version_internal	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
 init	include/Cgo/CgoSocket.h	/^	int init(const uint16_t port, int backlog = 3) {$/;"	f	class:socket	typeref:typename:int
 init	include/Cgo/CgoSocket.h	/^	socket_t init() {$/;"	f	class:socket	typeref:typename:socket_t
+init	test/SmartHome_server.cpp	/^void init() {$/;"	f	typeref:typename:void
 is_sockfd_open	include/Cgo/CgoSocket.h	/^	bool is_sockfd_open() {$/;"	f	class:socket	typeref:typename:bool
 len	include/Cgo/CgoSocket.h	/^	len_t len;$/;"	m	class:_base_sockaddr	typeref:typename:len_t
 len_t	include/Cgo/CgoSocket.h	/^	using len_t = socklen_t ;$/;"	t	class:sockaddr	typeref:typename:socklen_t
@@ -770,6 +778,12 @@ src/Non-blocking.o	build/Makefile	/^src\/Non-blocking.o: src\/Non-blocking.cpp.o
 src/Non-blocking.o	include/Makefile	/^src\/Non-blocking.o: src\/Non-blocking.c.o$/;"	t
 src/Non-blocking.s	build/Makefile	/^src\/Non-blocking.s: src\/Non-blocking.cpp.s$/;"	t
 src/Non-blocking.s	include/Makefile	/^src\/Non-blocking.s: src\/Non-blocking.c.s$/;"	t
+src/config.cpp.i	build/Makefile	/^src\/config.cpp.i:$/;"	t
+src/config.cpp.o	build/Makefile	/^src\/config.cpp.o:$/;"	t
+src/config.cpp.s	build/Makefile	/^src\/config.cpp.s:$/;"	t
+src/config.i	build/Makefile	/^src\/config.i: src\/config.cpp.i$/;"	t
+src/config.o	build/Makefile	/^src\/config.o: src\/config.cpp.o$/;"	t
+src/config.s	build/Makefile	/^src\/config.s: src\/config.cpp.s$/;"	t
 src/net.c.i	include/Makefile	/^src\/net.c.i:$/;"	t
 src/net.c.o	include/Makefile	/^src\/net.c.o:$/;"	t
 src/net.c.s	include/Makefile	/^src\/net.c.s:$/;"	t
@@ -825,6 +839,7 @@ test/SmartHome_server.s	include/Makefile	/^test\/SmartHome_server.s: test\/Smart
 thread_pool	include/Cgo/CgoThreadPool.h	/^    thread_pool(int thread_num = 1) : _thread_num(thread_num), _threads(thread_num), state(false/;"	f	class:thread_pool
 thread_pool	include/Cgo/CgoThreadPool.h	/^class thread_pool {$/;"	c
 thread_ptrs_t	include/Cgo/CgoThreadPool.h	/^    using thread_ptrs_t = std::vector<std::thread *>;$/;"	t	class:thread_pool	typeref:typename:std::vector<std::thread * >
+trim	src/config.cpp	/^std::string trim(const std::string& str) {$/;"	f	typeref:typename:std::string
 type	include/Cgo/CgoSocket.h	/^	using type = struct ::sockaddr_in;$/;"	t	struct:sockaddr_traits	typeref:struct:::sockaddr_in
 type	include/Cgo/CgoSocket.h	/^    using type = struct ::sockaddr_un;$/;"	t	struct:sockaddr_traits	typeref:struct:::sockaddr_un
 type	include/datatype.h	/^    enum device_type type;      \/\/ 设备类型$/;"	m	struct:device	typeref:enum:device_type

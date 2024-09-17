@@ -77,7 +77,7 @@ int main() {
 	    int c = getchar();
 	    switch (c) {
 		    case 13:{
-	    		send_chat();            // 如果是回车直接发送
+	    		send_chat();            // 回车键打开输入框
 			    break;
 		    }
 		    default:

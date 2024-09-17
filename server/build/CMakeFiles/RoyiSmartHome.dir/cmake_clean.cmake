@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.o"
   "CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.o.d"
+  "CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o"
+  "CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o.d"
   "CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o"
   "CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o.d"
   "CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o"

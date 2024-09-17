@@ -41,5 +41,8 @@
 /******************************* head ***********************************/
 
 #include "./DBG/DBG"                // debug相关内容
+#include "./config.h"               // 获取配置文件的函数
+
+extern std::map<std::string, std::string> Envir;
 
 #endif

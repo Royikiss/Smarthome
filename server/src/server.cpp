@@ -32,7 +32,7 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
         sql::ResultSet *res;
 
         driver = sql::mysql::get_mysql_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "royi", "xXJiaJiaJia123");
+        con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
         con->setSchema("SmartHome");
         
         std::string username = tmessage.name;
@@ -210,7 +210,7 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
                 sql::PreparedStatement *pstmt;
 
                 driver = sql::mysql::get_mysql_driver_instance();
-                con = driver->connect("tcp://127.0.0.1:3306", "royi", "xXJiaJiaJia123");
+                con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
                 con->setSchema("SmartHome");
 
                 // 更新登录状态，设置 state 为 0 表示用户下线
@@ -290,7 +290,7 @@ void loginFunction(int bridge, int client_fd) {
             sql::ResultSet *res;
 
             driver = sql::mysql::get_mysql_driver_instance();
-            con = driver->connect("tcp://127.0.0.1:3306", "royi", "xXJiaJiaJia123");
+            con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
             con->setSchema("SmartHome");
 
             // 查找用户名并验证密码

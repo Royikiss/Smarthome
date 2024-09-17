@@ -1100,3 +1100,4590 @@ Host: example.com:443
 User-Agent: Go-http-client/1.1
 
 ] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+recv error: Connection reset by peer
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 接收登陆信息错误,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /manager/text/list HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 zgrab/0.x
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /manager/text/list HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 zgrab/0.x
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /manager/text/list HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 zgrab/0.x
+Accept: */*
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36 
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36 
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36 
+Accept: */*
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT 45.61.136.175:7227 HTTP/1.1
+Host: 45.61.136.175:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT 45.61.136.175:7227 HTTP/1.1
+Host: 45.61.136.175:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT 45.61.136.175:7227 HTTP/1.1
+Host: 45.61.136.175:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+recv error: Connection reset by peer
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 接收登陆信息错误,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /cgi-bin/luci/;stok=/locale HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /cgi-bin/luci/;stok=/locale HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /cgi-bin/luci/;stok=/locale HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+recv error: Connection reset by peer
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 接收登陆信息错误,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /cgi-bin/luci/;stok=/locale HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /cgi-bin/luci/;stok=/locale HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /cgi-bin/luci/;stok=/locale HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+recv error: Connection reset by peer
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 接收登陆信息错误,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT 193.149.189.126:7227 HTTP/1.1
+Host: 193.149.189.126:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT 193.149.189.126:7227 HTTP/1.1
+Host: 193.149.189.126:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT 193.149.189.126:7227 HTTP/1.1
+Host: 193.149.189.126:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [HEAD http://110.242.68.4/ HTTP/1.1
+Host: 110.242.68.4
+Proxy-Authorization: Basic Og==
+Proxy-Connection: Keep-Alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.01678543 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+Accept-Language: zh-CN,zh;q=0.8
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [HEAD http://110.242.68.4/ HTTP/1.1
+Host: 110.242.68.4
+Proxy-Authorization: Basic Og==
+Proxy-Connection: Keep-Alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.01678543 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+Accept-Language: zh-CN,zh;q=0.8
+
+] 的登陆验证通过, 发送至子反应堆
+usr [HEAD http://110.242.68.4/ HTTP/1.1
+Host: 110.242.68.4
+Proxy-Authorization: Basic Og==
+Proxy-Connection: Keep-Alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.01678543 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+Accept-Language: zh-CN,zh;q=0.8
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57
+Accept: */*
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+Accept: */*
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+Accept: */*
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+Accept: */*
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [USER anonymous
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+Accept: */*
+Connection: Close
+Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,*;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+Accept: */*
+Connection: Close
+Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,*;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+Accept: */*
+Connection: Close
+Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,*;q=0.5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: curl/7.64.1
+Accept: */*
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: curl/7.64.1
+Accept: */*
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: curl/7.64.1
+Accept: */*
+
+] 登陆成功
+recv error: Connection reset by peer
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 接收登陆信息错误,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT 185.65.245.140:7227 HTTP/1.1
+Host: 185.65.245.140:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT 185.65.245.140:7227 HTTP/1.1
+Host: 185.65.245.140:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT 185.65.245.140:7227 HTTP/1.1
+Host: 185.65.245.140:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT 193.149.189.126:7227 HTTP/1.1
+Host: 193.149.189.126:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT 193.149.189.126:7227 HTTP/1.1
+Host: 193.149.189.126:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT 193.149.189.126:7227 HTTP/1.1
+Host: 193.149.189.126:7227
+User-Agent: Python/3.9 python-socks/2.0.3
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1
+Host: hotmail-com.olc.protection.outlook.com:25
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1
+Host: hotmail-com.olc.protection.outlook.com:25
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1
+Host: hotmail-com.olc.protection.outlook.com:25
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [MGLNDD_8.130.131.34_8081
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [MGLNDD_8.130.131.34_8081
+] 的登陆验证通过, 发送至子反应堆
+usr [MGLNDD_8.130.131.34_8081
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT 80.66.83.49:80 HTTP/1.1
+Host: 80.66.83.49:80
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT 80.66.83.49:80 HTTP/1.1
+Host: 80.66.83.49:80
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT 80.66.83.49:80 HTTP/1.1
+Host: 80.66.83.49:80
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0
+Accept: */*
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Mozilla/5.0
+Accept: */*
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [�] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [�] 的登陆验证通过, 发送至子反应堆
+usr [�] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET / HTTP/1.1
+Host: 8.130.131.34:8081
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+recv error: Connection reset by peer
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 登陆超时,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 接收登陆信息错误,断开连接
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [] 的登陆验证通过, 发送至子反应堆
+usr [] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET /config HTTP/1.1
+Host: 8.130.131.34:8081
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 的登陆验证通过, 发送至子反应堆
+usr [GET http://example.com/ HTTP/1.1
+Host: example.com
+User-Agent: Go-http-client/1.1
+Accept-Encoding: gzip
+Connection: close
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 的登陆验证通过, 发送至子反应堆
+usr [CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: Go-http-client/1.1
+
+] 登陆成功
+[1;34m[===DBG===]: [0m主反应堆: 线程正常退出
+[1;34m[===DBG===]: [0m主反应堆: 检测到用户名为 [MGLNDD_8.130.131.34_8081
+] 的登陆请求,开始验证...
+[1;34m[===DBG===]: [0m主反应堆: 用户名为 [MGLNDD_8.130.131.34_8081
+] 的登陆验证通过, 发送至子反应堆
+usr [MGLNDD_8.130.131.34_8081
+] 登陆成功

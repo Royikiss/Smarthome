@@ -83,10 +83,24 @@ CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/royi/SmartHome/server/src/Non-blocking.cpp -o CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.s
 
+CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o: CMakeFiles/RoyiSmartHome.dir/flags.make
+CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o: ../src/config.cpp
+CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o: CMakeFiles/RoyiSmartHome.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o -MF CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o.d -o CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o -c /home/royi/SmartHome/server/src/config.cpp
+
+CMakeFiles/RoyiSmartHome.dir/src/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoyiSmartHome.dir/src/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/royi/SmartHome/server/src/config.cpp > CMakeFiles/RoyiSmartHome.dir/src/config.cpp.i
+
+CMakeFiles/RoyiSmartHome.dir/src/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoyiSmartHome.dir/src/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/royi/SmartHome/server/src/config.cpp -o CMakeFiles/RoyiSmartHome.dir/src/config.cpp.s
+
 CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o: CMakeFiles/RoyiSmartHome.dir/flags.make
 CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o: ../src/net.cpp
 CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o: CMakeFiles/RoyiSmartHome.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o -MF CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o.d -o CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o -c /home/royi/SmartHome/server/src/net.cpp
 
 CMakeFiles/RoyiSmartHome.dir/src/net.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/RoyiSmartHome.dir/src/net.cpp.s: cmake_force
 CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o: CMakeFiles/RoyiSmartHome.dir/flags.make
 CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o: ../src/server.cpp
 CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o: CMakeFiles/RoyiSmartHome.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o -MF CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o.d -o CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o -c /home/royi/SmartHome/server/src/server.cpp
 
 CMakeFiles/RoyiSmartHome.dir/src/server.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/RoyiSmartHome.dir/src/server.cpp.s: cmake_force
 CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o: CMakeFiles/RoyiSmartHome.dir/flags.make
 CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o: ../src/transport_socket.cpp
 CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o: CMakeFiles/RoyiSmartHome.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o -MF CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o.d -o CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o -c /home/royi/SmartHome/server/src/transport_socket.cpp
 
 CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.s: cmake_force
 CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o: CMakeFiles/RoyiSmartHome.dir/flags.make
 CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o: ../test/SmartHome_server.cpp
 CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o: CMakeFiles/RoyiSmartHome.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o -MF CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o.d -o CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o -c /home/royi/SmartHome/server/test/SmartHome_server.cpp
 
 CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.i: cmake_force
@@ -142,6 +156,7 @@ CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.s: cmake_force
 # Object files for target RoyiSmartHome
 RoyiSmartHome_OBJECTS = \
 "CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.o" \
+"CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o" \
 "CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o" \
 "CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o" \
 "CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o" \
@@ -151,13 +166,14 @@ RoyiSmartHome_OBJECTS = \
 RoyiSmartHome_EXTERNAL_OBJECTS =
 
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/src/Non-blocking.cpp.o
+RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/src/config.cpp.o
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/src/net.cpp.o
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/src/server.cpp.o
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/src/transport_socket.cpp.o
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/test/SmartHome_server.cpp.o
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/build.make
 RoyiSmartHome: CMakeFiles/RoyiSmartHome.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable RoyiSmartHome"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/royi/SmartHome/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RoyiSmartHome"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RoyiSmartHome.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
