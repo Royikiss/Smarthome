@@ -14,6 +14,7 @@ std::string trim(const std::string& str) {
     return (first == std::string::npos || last == std::string::npos) ? "" : str.substr(first, last - first + 1);
 }
 
+
 std::string getConfig(const std::string configFile, const std::string keyWord) {
     std::ifstream file(configFile);  // 打开文件
     if (!file.is_open()) {

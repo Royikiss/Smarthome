@@ -429,6 +429,7 @@ HEX	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/
 HEX	include/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
 HEX	include/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 HIDE	include/DBG/color.h	/^#define HIDE(/;"	d
+HeartSending	src/server.cpp	/^void HeartSending(std::map<std::string, int> &u2f, std::map<int, std::string> &f2u, bool *heart_/;"	f	typeref:typename:void
 ID_VOID_MAIN	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
 ID_VOID_MAIN	include/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
 L_BLACK	include/DBG/color.h	/^#define L_BLACK(/;"	d
@@ -607,7 +608,7 @@ edit_cache	build/Makefile	/^edit_cache:$/;"	t
 edit_cache	include/Makefile	/^edit_cache:$/;"	t
 edit_cache/fast	build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	include/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
-events_handle	src/server.cpp	/^void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u)/;"	f	typeref:typename:void
+events_handle	src/server.cpp	/^void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u,/;"	f	typeref:typename:void
 fd	include/transport_socket.h	/^    int fd;$/;"	m	struct:UsrMsg	typeref:typename:int
 flush_len	include/Cgo/CgoSocket.h	/^	len_t flush_len() override {$/;"	f	class:sockaddr	typeref:typename:len_t
 func_t	include/Cgo/CgoThreadPool.h	/^    using func_t = std::function<void()>;$/;"	t	class:task

@@ -9,7 +9,7 @@
 #include "../include/head.h"
 
 #define BACKLOG 5
-#define MAX_EVENTS 10
+#define MAX_EVENTS 65535
 
 pid_t slave_reactor_pid;
 int bridge[2]; // 父子进程套接字通讯域套接字
@@ -51,6 +51,7 @@ int main() {
         UsrMsg tusg;                                // 从主反应堆发来的数据
         std::map<std::string, int> u2f;             // 用户名与文件描述符的对应关系
         std::map<int, std::string> f2u;             // 文件描述符与用户名的对应关系
+        bool heart_view[MAX_EVENTS];                // 心跳监测
         int epoll_fd = epoll_create1(0);            // 事件监控
         int client_fd;
 
@@ -69,8 +70,10 @@ int main() {
             exit(EXIT_FAILURE);
         }
 
+        pool.add_task(HeartSending, std::ref(u2f), std::ref(f2u), heart_view);
+
         while(true) {
-            int nfds = epoll_wait(epoll_fd, events, 10, -1);
+            int nfds = epoll_wait(epoll_fd, events, MAX_EVENTS, -1);
             if (nfds == -1) {
                 perror("epoll_wait failed");
                 continue;
@@ -79,7 +82,7 @@ int main() {
                 int event_fd = events[i].data.fd;
 
                 if (event_fd == bridge[0] && (events[i].events & EPOLLIN)) {
-                    // 从 bridge[0] 接收文件描述符
+                    // 有新的连接请求进入
                     client_fd = recv_UsrMsg(bridge[0], tusg);
                     if (client_fd < 0) {
                         std::cout << "文件描述符获取失败" << std::endl;
@@ -108,7 +111,7 @@ int main() {
                 else if (events[i].events & EPOLLIN) {
                     // 处理客户端请求
                     DBG("从反应堆: 会话 [%d] 出现请求, 添加到任务队列\n", event_fd);
-                    pool.add_task(events_handle, event_fd, u2f, f2u);
+                    pool.add_task(events_handle, event_fd, std::ref(u2f), std::ref(f2u), heart_view);
                 }
             }
         }

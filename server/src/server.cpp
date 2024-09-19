@@ -177,65 +177,6 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
     return ;
 }
 
-// 对于每一个连接的事务处理
-void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u) {
-    SmhMsg tmessage;
-    ssize_t recv_size = 0;
-    if ((recv_size = recv(sockfd, (void *)&tmessage, sizeof(tmessage), 0)) > 0) {
-        if (tmessage.type & SMH_MSG) {
-            // 聊天信息
-            int tf = u2f[tmessage.name];
-            if (tf) {
-                DBG("子反应堆[事务处理]: [%s] 向 [%s] 说: \"s\"\n", f2u[sockfd].c_str(), tmessage.name, tmessage.msg);
-                send(tf, (void *)&tmessage, sizeof(tmessage), 0);
-            }
-        } else if (tmessage.type & SMH_WALL) {
-            // 公告
-            for (std::map<std::string, int>::iterator it = u2f.begin(); it != u2f.end(); ++it) {
-                send(it->second, (void *)&tmessage, sizeof(tmessage), 0);
-            }
-            DBG("子反应堆[事务处理]: [%s] 向 所有人[All] 说: \"%s\" \n", f2u[sockfd].c_str(), tmessage.msg);
-        } else if (tmessage.type & SMH_CTL) {
-            // 控制信息
-            DBG("子反应堆[事务处理]: 触发设备控制操作,转向设备中心处理...\n");
-            handle_ctl(sockfd, tmessage, f2u);
-        } else if (tmessage.type & SMH_FIN) {
-            DBG("子反应堆[事务处理]: 用户 [%s] 申请退出,执行数据同步操作...\n", f2u[sockfd].c_str());
-            // 退出信息
-            std::string sender_name = f2u[sockfd];
-            // 在 MySQL 中修改该用户的状态为未登录
-            try {
-                sql::mysql::MySQL_Driver *driver;
-                sql::Connection *con;
-                sql::PreparedStatement *pstmt;
-
-                driver = sql::mysql::get_mysql_driver_instance();
-                con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
-                con->setSchema("SmartHome");
-
-                // 更新登录状态，设置 state 为 0 表示用户下线
-                pstmt = con->prepareStatement("UPDATE user SET state = ? WHERE name = ?");
-                pstmt->setInt(1, 0);  // 设置状态为未登录
-                pstmt->setString(2, sender_name.c_str());
-                pstmt->executeUpdate();
-
-                delete pstmt;
-                delete con;
-            } catch (sql::SQLException &e) {
-                std::cerr << "MySQL error: " << e.what() << std::endl;
-            }
-            // 关闭连接并退出
-            u2f.erase(sender_name);
-            f2u.erase(sockfd);
-            close(sockfd);
-        }
-        DBG("子反应堆[事务处理]: 线程正常退出\n");
-        return ;
-    }
-    return ;
-
-}
-
 void loginFunction(int bridge, int client_fd) {
     // 设置套接字为非阻塞模式
     make_nonblock(client_fd);
@@ -353,5 +294,142 @@ void loginFunction(int bridge, int client_fd) {
 
     close(client_fd);
     DBG("主反应堆: 线程正常退出\n");
+    return ;
+}
+
+// 对于每一个连接的事务处理
+void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u, bool *heart_ctl) {
+    SmhMsg msg_tmp, msg_pre, msg;
+    size_t msg_size = sizeof(msg);
+    ssize_t offset = 0, recv_size = 0, send_size;
+
+    bzero(&msg_pre, sizeof(msg_pre));
+    bzero(&msg_tmp, sizeof(msg_tmp));
+    bzero(&msg, sizeof(msg));
+
+    while (1) {
+        bzero(&msg_tmp, sizeof(msg_tmp));
+        if (offset) {
+            memcpy(&msg, &msg_pre, offset);
+        }
+        while((recv_size = recv(sockfd, (void *)&msg_tmp, msg_size, 0)) > 0) {
+            if (offset + recv_size == msg_size) {
+                memcpy((char *)&msg + offset, (char *)&msg_tmp, recv_size);
+                offset = 0;
+                break;
+            } else if (offset + recv_size < msg_size) {
+                memcpy((char *)&msg + offset, (char *)&msg_tmp, recv_size);
+                offset += recv_size;
+            } else if (offset + recv_size > msg_size) {
+                int wait = recv_size - offset;
+                memcpy((char *)&msg + offset, (char *)&msg_tmp, wait);
+                offset = recv_size - wait;
+                memcpy((char *)&msg_pre, (char *)&msg_tmp + wait, offset);
+                break;
+            }
+        }
+
+        if (msg.type & SMH_ACK) {
+            // 心跳信息
+            DBG("子反应堆[事务处理]: 接受到来自用户 [%s] 的心跳回复\n", f2u[sockfd].c_str());
+            heart_ctl[sockfd] = false;
+        } else if (msg.type & SMH_MSG) {
+            // 聊天信息
+            int tf = u2f[msg.name];
+            if (tf) {
+                DBG("子反应堆[事务处理]: [%s] 向 [%s] 说: \"s\"\n", f2u[sockfd].c_str(), msg.name, msg.msg);
+                send(tf, (void *)&msg, sizeof(msg), 0);
+            }
+        } else if (msg.type & SMH_WALL) {
+            // 公告
+            for (std::map<std::string, int>::iterator it = u2f.begin(); it != u2f.end(); ++it) {
+                send(it->second, (void *)&msg, sizeof(msg), 0);
+            }
+            DBG("子反应堆[事务处理]: [%s] 向 所有人[All] 说: \"%s\" \n", f2u[sockfd].c_str(), msg.msg);
+        } else if (msg.type & SMH_CTL) {
+            // 控制信息
+            DBG("子反应堆[事务处理]: 触发设备控制操作,转向设备中心处理...\n");
+            handle_ctl(sockfd, msg, f2u);
+        } else if (msg.type & SMH_FIN) {
+            DBG("子反应堆[事务处理]: 用户 [%s] 申请退出,执行数据同步操作...\n", f2u[sockfd].c_str());
+            // 退出信息
+            std::string sender_name = f2u[sockfd];
+            // 在 MySQL 中修改该用户的状态为未登录
+            try {
+                sql::mysql::MySQL_Driver *driver;
+                sql::Connection *con;
+                sql::PreparedStatement *pstmt;
+
+                driver = sql::mysql::get_mysql_driver_instance();
+                con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
+                con->setSchema("SmartHome");
+
+                // 更新登录状态，设置 state 为 0 表示用户下线
+                pstmt = con->prepareStatement("UPDATE user SET state = ? WHERE name = ?");
+                pstmt->setInt(1, 0);  // 设置状态为未登录
+                pstmt->setString(2, sender_name.c_str());
+                pstmt->executeUpdate();
+
+                delete pstmt;
+                delete con;
+            } catch (sql::SQLException &e) {
+                std::cerr << "MySQL error: " << e.what() << std::endl;
+            }
+            // 关闭连接并退出
+            u2f.erase(sender_name);
+            f2u.erase(sockfd);
+            close(sockfd);
+        }
+        DBG("子反应堆[事务处理]: 线程正常退出\n");
+        return ;
+    }
+    return ;
+}
+
+void HeartSending(std::map<std::string, int> &u2f, std::map<int, std::string> &f2u, bool *heart_ctl) {
+    int max_socket = 0;
+    SmhMsg smsg;
+    smsg.type = SMH_HEART;
+    std::queue<int> checking_socket;
+    try {
+        sql::mysql::MySQL_Driver *driver;
+        sql::Connection *con;
+        sql::PreparedStatement *pstmt;
+
+        driver = sql::mysql::get_mysql_driver_instance();
+        con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
+        con->setSchema("SmartHome");
+
+        while (true) {
+            sleep(10);
+            while (!checking_socket.empty()) {
+                if (heart_ctl[checking_socket.front()] == true) {
+                    // 心跳未回应强制退出
+                    DBG(L_RED("[心跳监测]: 用户[%s]未回应心跳, 强制退出\n") , f2u[checking_socket.front()].c_str());
+                    pstmt = con->prepareStatement("UPDATE user SET state = ? WHERE name = ?");
+                    pstmt->setInt(1, 0); 
+                    pstmt->setString(2, f2u[checking_socket.front()].c_str());
+                    pstmt->executeUpdate();
+
+                    u2f.erase(f2u[checking_socket.front()]);
+                    f2u.erase(checking_socket.front());
+                    close(checking_socket.front()); // 关闭连接
+                        
+                    delete pstmt;
+                    delete con;
+                }
+                checking_socket.pop();
+            }
+            DBG(L_RED("[心跳监测]: 新一轮的心跳监测开始了...\n"));
+            for (std::map<std::string, int>::iterator it = u2f.begin(); it != u2f.end(); ++it) {
+                DBG(L_RED("[♥️]: Send ♥️ to [%s]\n") , it->first.c_str());
+                checking_socket.push(it->second);
+                heart_ctl[it->second] = true;
+                send(it->second, (void *)&smsg, sizeof(smsg), 0);
+            }
+        }
+    } catch (sql::SQLException &e) {
+        std::cerr << "MySQL error: " << e.what() << std::endl;
+    }
     return ;
 }
