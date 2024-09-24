@@ -16,9 +16,13 @@
 # Quick Starting
 
 client 和 server 对应的分别是客户端和用户端的代码。
-在linux系统下，你可以使用已经提供的配置文件信息（路径在 /SmartHome/client/config/configfile）来测试客户端的使用（当前功能暂未开放，因为没有添加注册账户的功能）
+在linux系统下，你可以使用已经提供的配置文件信息（路径在 ~/SmartHome/client/config/configfile）来测试客户端的使用（当前功能暂未开放，因为没有添加注册账户的功能）
+如果你缺少依赖,也可以使用已经编译好的程序,可以在 `~/SmartHome/build/RoyiSmartHome` 找到
+注意,程序不一定能够在所有linux发行版的主机上运行,如果不能运行,请解决依赖问题:
 
-## make
+> 依赖项: `ncuress`  `Connector/C++` `thread`
+
+## Make
 
 使用Cmake进行构建：
 
@@ -41,8 +45,6 @@ make
 ```
 
 启用Debug模式看到更多信息。
-
-> 依赖项: `ncuress`  `Connector/C++` `thread`
 
 ## config
 
