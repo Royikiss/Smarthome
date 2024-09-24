@@ -196,31 +196,32 @@ void loginFunction(int bridge, int client_fd) {
     timeout.tv_sec = 1;
     timeout.tv_usec = 0;
     
-    // 开始监听
     int ret = select(client_fd + 1, &readfds, NULL, NULL, &timeout);
 
     if (ret == -1) {
         // 错误连接处理
-        DBG("主反应堆: 套接字监听错误,线程退出\n");
+        DBG("Master Reactor: 套接字监听错误,线程退出\n");
         perror("select error");
         close(client_fd);
         return;
     } else if (ret == 0) {
         // 超时处理
-        DBG("主反应堆: 登陆超时,断开连接\n");
+        DBG("Master Reactor: 登陆超时,断开连接\n");
         close(client_fd);
         return;
     }
 
     // 接受客户端的登录请求
     if ((size = recv(client_fd, &logReq, sizeof(logReq), 0)) < 0) {
-        DBG("主反应堆: 接收登陆信息错误,断开连接\n");
+        DBG("Master Reactor: 接收登陆信息错误,断开连接\n");
         perror("recv error");
         close(client_fd);
         return;
     }
 
-    DBG("主反应堆: 检测到用户名为 [%s] 的登陆请求,开始验证...\n", logReq.name);
+    DBG("Master Reactor: 检测到用户名为 [%s] 的登陆请求,开始验证...\n", logReq.name);
+    DBG("size = %d\n", size);
+
 
     // 验证用户名的逻辑
     if (strlen(logReq.name) != 0 && strlen(logReq.passwd) != 0) {
@@ -263,9 +264,6 @@ void loginFunction(int bridge, int client_fd) {
             }
 
             // 清理资源
-            delete res;
-            delete pstmt;
-            delete con;
         } catch (sql::SQLException &e) {
             std::cerr << "MySQL error: " << e.what() << std::endl;
             logResp.type = 1;  // 登录失败
@@ -284,16 +282,25 @@ void loginFunction(int bridge, int client_fd) {
         perror("send error");
     }
 
-    UsrMsg usr_msg;
-    usr_msg.fd = client_fd;
-    strcpy(usr_msg.username, logReq.name);
-    DBG("主反应堆: 用户名为 [%s] 的登陆验证通过, 发送至子反应堆\n", logReq.name);
-    send_UsrMsg(bridge, usr_msg);
+    if (logResp.type == 0) {
+        UsrMsg usr_msg;
+        usr_msg.fd = client_fd;
+        strcpy(usr_msg.username, logReq.name);
+        DBG("Master Reactor: 用户名为 [%s] 的登陆验证通过, 发送至Sub-Reactor\n", logReq.name);
+        send_UsrMsg(bridge, usr_msg);
 
-    std::cout << "usr ["<< logReq.name << "] " << "登陆成功" << std::endl;
+        std::cout << "usr ["<< logReq.name << "] " << "登陆成功" << std::endl;
 
-    close(client_fd);
-    DBG("主反应堆: 线程正常退出\n");
+        close(client_fd);
+        DBG("Master Reactor: 线程正常退出\n");
+        return ;
+    } else {
+        DBG("Master Reactor: 用户名为 [%s] 的登陆验证未通过, 发送至Sub-Reactor\n", logReq.name);
+        std::cout << "usr ["<< logReq.name << "] " << "登陆失败" << std::endl;
+        close(client_fd);
+        DBG("Master Reactor: 线程正常退出\n");
+        return ;
+    }
     return ;
 }
 
@@ -331,13 +338,13 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
 
         if (msg.type & SMH_ACK) {
             // 心跳信息
-            DBG("子反应堆[事务处理]: 接受到来自用户 [%s] 的心跳回复\n", f2u[sockfd].c_str());
+            DBG("Sub-Reactor[事务处理]: 接受到来自用户 [%s] 的心跳回复\n", f2u[sockfd].c_str());
             heart_ctl[sockfd] = false;
         } else if (msg.type & SMH_MSG) {
             // 聊天信息
             int tf = u2f[msg.name];
             if (tf) {
-                DBG("子反应堆[事务处理]: [%s] 向 [%s] 说: \"s\"\n", f2u[sockfd].c_str(), msg.name, msg.msg);
+                std::cout << "[" << f2u[sockfd].c_str() << "] 向 [" << msg.name << "] 说: \"" << msg.msg << "\"" << std::endl;
                 send(tf, (void *)&msg, sizeof(msg), 0);
             }
         } else if (msg.type & SMH_WALL) {
@@ -345,13 +352,13 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
             for (std::map<std::string, int>::iterator it = u2f.begin(); it != u2f.end(); ++it) {
                 send(it->second, (void *)&msg, sizeof(msg), 0);
             }
-            DBG("子反应堆[事务处理]: [%s] 向 所有人[All] 说: \"%s\" \n", f2u[sockfd].c_str(), msg.msg);
+            std::cout << "[" << f2u[sockfd].c_str() << "] 向 所有人[All] 说: \"" << msg.msg << "\"" << std::endl;
         } else if (msg.type & SMH_CTL) {
             // 控制信息
-            DBG("子反应堆[事务处理]: 触发设备控制操作,转向设备中心处理...\n");
+            std::cout << "[" << f2u[sockfd].c_str() << "] 触发设备控制操作,转向设备中心处理..." << std::endl;
             handle_ctl(sockfd, msg, f2u);
         } else if (msg.type & SMH_FIN) {
-            DBG("子反应堆[事务处理]: 用户 [%s] 申请退出,执行数据同步操作...\n", f2u[sockfd].c_str());
+            std::cout << "用户 [" << f2u[sockfd].c_str() << "] 申请退出,执行数据同步操作..." << std::endl;
             // 退出信息
             std::string sender_name = f2u[sockfd];
             // 在 MySQL 中修改该用户的状态为未登录
@@ -380,7 +387,7 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
             f2u.erase(sockfd);
             close(sockfd);
         }
-        DBG("子反应堆[事务处理]: 线程正常退出\n");
+        DBG("Sub-Reactor[事务处理]: 线程正常退出\n");
         return ;
     }
     return ;
@@ -401,7 +408,7 @@ void HeartSending(std::map<std::string, int> &u2f, std::map<int, std::string> &f
         con->setSchema("SmartHome");
 
         while (true) {
-            sleep(10);
+            sleep(60);
             while (!checking_socket.empty()) {
                 if (heart_ctl[checking_socket.front()] == true) {
                     // 心跳未回应强制退出
@@ -431,5 +438,4 @@ void HeartSending(std::map<std::string, int> &u2f, std::map<int, std::string> &f
     } catch (sql::SQLException &e) {
         std::cerr << "MySQL error: " << e.what() << std::endl;
     }
-    return ;
 }

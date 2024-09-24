@@ -6,5 +6,5 @@ CXX_DEFINES = -D_D
 
 CXX_INCLUDES = -I/home/royi/SmartHome/server/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 
