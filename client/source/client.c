@@ -59,7 +59,6 @@ void *client_recv(void *arg) {
 		if (msg.type & SMH_HEART) {
 			bzero(&smsg, sizeof(smsg));
 			smsg.type = SMH_ACK;
-	        show_message(message_sub, &usrinfo,"来自服务器的心跳 💓\n", 0);
 			if((send_size = send(sockfd, (void *)&smsg, sizeof(smsg), 0)) < 0) {
 				DBG(RED"Heart respond faild!\n"NONE);
 			} else {

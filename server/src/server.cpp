@@ -35,7 +35,7 @@ void handle_ctl(int sockfd, SmhMsg &tmessage, std::map<int, std::string> &f2u) {
         con = driver->connect("tcp://127.0.0.1:3306", Envir["MYSQLUSR"].c_str(), Envir["MYSQLPASSWORD"].c_str());
         con->setSchema("SmartHome");
         
-        std::string username = tmessage.name;
+        std::string username = f2u[sockfd];
        
         switch(tmessage.ctl.action) {
             case ACTION_GET_DEVICES : {
@@ -306,7 +306,7 @@ void loginFunction(int bridge, int client_fd) {
 
 // 对于每一个连接的事务处理
 void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, std::string> &f2u, bool *heart_ctl) {
-    SmhMsg msg_tmp, msg_pre, msg;
+    SmhMsg msg_tmp, msg_pre, msg, smsg;
     size_t msg_size = sizeof(msg);
     ssize_t offset = 0, recv_size = 0, send_size;
 
@@ -335,28 +335,31 @@ void events_handle(int sockfd, std::map<std::string, int> &u2f, std::map<int, st
                 break;
             }
         }
-
+        
+        smsg = msg;
         if (msg.type & SMH_ACK) {
             // 心跳信息
-            DBG("Sub-Reactor[事务处理]: 接受到来自用户 [%s] 的心跳回复\n", f2u[sockfd].c_str());
+            DBG("Sub-Reactor[events handle]: 接受到来自用户 [%s] 的心跳回复\n", f2u[sockfd].c_str());
             heart_ctl[sockfd] = false;
         } else if (msg.type & SMH_MSG) {
             // 聊天信息
             int tf = u2f[msg.name];
             if (tf) {
                 std::cout << "[" << f2u[sockfd].c_str() << "] 向 [" << msg.name << "] 说: \"" << msg.msg << "\"" << std::endl;
-                send(tf, (void *)&msg, sizeof(msg), 0);
+                sprintf(smsg.name, "%s[private chat]", f2u[sockfd].c_str());
+                send(tf, (void *)&smsg, sizeof(smsg), 0);
             }
         } else if (msg.type & SMH_WALL) {
             // 公告
             for (std::map<std::string, int>::iterator it = u2f.begin(); it != u2f.end(); ++it) {
-                send(it->second, (void *)&msg, sizeof(msg), 0);
+                send(it->second, (void *)&smsg, sizeof(smsg), 0);
             }
-            std::cout << "[" << f2u[sockfd].c_str() << "] 向 所有人[All] 说: \"" << msg.msg << "\"" << std::endl;
+            std::cout << "[" << f2u[sockfd].c_str() << "] 向 所有人[All] 说: \"" << smsg.msg << "\"" << std::endl;
         } else if (msg.type & SMH_CTL) {
             // 控制信息
             std::cout << "[" << f2u[sockfd].c_str() << "] 触发设备控制操作,转向设备中心处理..." << std::endl;
-            handle_ctl(sockfd, msg, f2u);
+            sprintf(smsg.name, "[Equipment Center]");
+            handle_ctl(sockfd, smsg, f2u);
         } else if (msg.type & SMH_FIN) {
             std::cout << "用户 [" << f2u[sockfd].c_str() << "] 申请退出,执行数据同步操作..." << std::endl;
             // 退出信息

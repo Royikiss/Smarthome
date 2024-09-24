@@ -127,7 +127,7 @@ void show_message(WINDOW *win, struct User *user, char *msg, int type) {
         }
     }
 
-    if (strstr(username, "中心") != NULL)
+    if (strstr(username, "Center") != NULL)
         wattron(win, COLOR_PAIR(4));
     if (message_num <= MSG_HEIGHT - 3) {
         w_gotoxy_puts(win, 10, message_num, username);

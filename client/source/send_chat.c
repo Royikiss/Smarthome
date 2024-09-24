@@ -33,6 +33,7 @@ void send_chat() {
         // 如果是私聊
         if (tmpmsg.msg[0] == '@') {
             strcpy(tmpmsg.name, strtok(tmpmsg.msg + 1, " "));
+            strcpy(tmpmsg.msg, strtok(NULL, ""));
             tmpmsg.type = SMH_MSG;
             send(sockfd, (void *)&tmpmsg, sizeof(tmpmsg), 0);
         } else {
