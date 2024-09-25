@@ -26,26 +26,26 @@ char *S_PASSWD;                     // 密码
 char _Server_Tmp_[VALUE_SIZE];
 char _Server_Value_[VARIABLE_NUM][VALUE_SIZE];
 
-int s_init(struct LogRequest * LogMessage);
+int s_init(struct LogRequest * LogMessage, int argc, char *argv[]);
 
-int main() {
+int main(int argc, char *argv[]) {
     struct LogRequest LogReq;                   // 登陆请求信息
     struct LogResponse LogResp;                 // 登陆回应信息
     memset(&LogReq, 0, sizeof(LogReq));
-
-    setlocale(LC_ALL,"");
-    #ifndef _D
-        init_ui();
-    #endif
 
     // 设定退出信号
     signal(SIGINT, logout);
 
     // 读取配置文件
-    if (s_init(&LogReq) < 0) {
+    if (s_init(&LogReq, argc, argv) < 0) {
         DBG(RED"Init LogRequest fild!\n"NONE);
         return 1; 
     }
+
+    setlocale(LC_ALL,"");
+    #ifndef _D
+        init_ui();
+    #endif
     
     // 发送连接
     if ((sockfd = socket_connect(S_IP, atoi(S_PORT))) < 0) {
@@ -91,7 +91,34 @@ int main() {
 }
 
 /* 初始化 */
-int s_init(struct LogRequest * LogMessage) {
+int s_init(struct LogRequest * LogMessage, int argc, char *argv[]) {
+    int opt;
+    while ((opt = getopt(argc, argv, "u:p:")) != -1) {
+        switch (opt) {
+            case 'u': {
+                S_NAME = optarg;
+                strcpy(LogMessage->name, S_NAME);
+                DBG(BLUE"Get env : ${SERVER_NAME} = {%s}\n"NONE, S_NAME);
+                break;
+            }
+            case 'p': {
+                S_PASSWD = optarg;
+                strcpy(LogMessage->passwd, S_PASSWD);
+                DBG(BLUE"Get env : ${SERVER_PASSWD} = {%s}\n"NONE, S_PASSWD);
+                break;
+            }
+            default: {
+                fprintf(stderr, "Usage: %s, -u [username] -p [password]\n", argv[0]);
+                return -1;
+            }
+        }
+    }
+
+    if (S_NAME == NULL || S_PASSWD == NULL) {
+        fprintf(stderr, "Usage: %s, -u [username] -p [password]\n", argv[0]);
+        return -1;
+    }
+
     if ((S_IP = get_config_value("../config/configfile", "SERVER_IP")) == NULL) {
         log_event(LOG_LEVEL_ERROR, "../config/log.txt", LOGT_NEW, "SERVER_IP lost!\n");
         return -1;
@@ -106,21 +133,21 @@ int s_init(struct LogRequest * LogMessage) {
         DBG(BLUE"Get env : ${SERVER_PORT} = {%s}\n"NONE, S_PORT);
     }
 
-    if ((S_NAME = get_config_value("../config/configfile", "SERVER_NAME")) == NULL) {
-        log_event(LOG_LEVEL_ERROR, "../config/log.txt", LOGT_NEW, "SERVER_NAME lost!\n");
-        return -1;
-    } else {
-        DBG(BLUE"Get env : ${SERVER_NAME} = {%s}\n"NONE, S_NAME);
-        strcpy(LogMessage->name, S_NAME);
-    }
-
-    if ((S_PASSWD = get_config_value("../config/configfile", "SERVER_PASSWD")) == NULL) {
-        log_event(LOG_LEVEL_ERROR, "../config/log.txt", LOGT_NEW, "SERVER_PASSWD lost!\n");
-        return -1;
-    } else {
-        DBG(BLUE"Get env : ${SERVER_PASSWD} = {%s}\n"NONE, S_PASSWD);
-        strcpy(LogMessage->passwd, S_PASSWD);
-    }
+//    if ((S_NAME = get_config_value("../config/configfile", "SERVER_NAME")) == NULL) {
+//        log_event(LOG_LEVEL_ERROR, "../config/log.txt", LOGT_NEW, "SERVER_NAME lost!\n");
+//        return -1;
+//    } else {
+//        DBG(BLUE"Get env : ${SERVER_NAME} = {%s}\n"NONE, S_NAME);
+//        strcpy(LogMessage->name, S_NAME);
+//    }
+//
+//    if ((S_PASSWD = get_config_value("../config/configfile", "SERVER_PASSWD")) == NULL) {
+//        log_event(LOG_LEVEL_ERROR, "../config/log.txt", LOGT_NEW, "SERVER_PASSWD lost!\n");
+//        return -1;
+//    } else {
+//        DBG(BLUE"Get env : ${SERVER_PASSWD} = {%s}\n"NONE, S_PASSWD);
+//        strcpy(LogMessage->passwd, S_PASSWD);
+//    }
     
     // 表示成功
     return 1;

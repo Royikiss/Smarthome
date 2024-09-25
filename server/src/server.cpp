@@ -13,14 +13,12 @@ extern std::map<std::string, int> n2s;
 
 // 服务器终止函数
 void signalHandler(int signum) {
-    std::cout << "Interrupt signal (" << signum << ") received.\n";
     // 如果子进程存在，首先杀死子进程
-    if (slave_reactor_pid != -1) {
+    if (slave_reactor_pid != 0) {
         std::cout << "Killing child process with PID: " << slave_reactor_pid << std::endl;
         kill(slave_reactor_pid, SIGKILL);  // 发送 SIGKILL 信号，强制终止子进程
         waitpid(slave_reactor_pid, nullptr, 0);  // 等待子进程终止
     }
-    std::cout << "Terminating parent process." << std::endl;
     exit(signum);  // 终止父进程
 }
 
@@ -271,9 +269,11 @@ void loginFunction(int bridge, int client_fd) {
         }
     } else {
         logResp.type = 1;  // 登录失败
-        strcpy(logResp.msg, "Invalid credentials");
+        strcpy(logResp.msg, "Invalid credentials\n");
         send(client_fd, &logResp, sizeof(logResp), 0);
         close(client_fd);
+        DBG("Master Reactor: 用户名为 [%s] 的登陆验证未通过,原因: 用户名或者密码为空\n", logReq.name);
+        std::cout << "usr ["<< logReq.name << "] " << "登陆失败" << std::endl;
         return ;
     }
 
@@ -295,7 +295,7 @@ void loginFunction(int bridge, int client_fd) {
         DBG("Master Reactor: 线程正常退出\n");
         return ;
     } else {
-        DBG("Master Reactor: 用户名为 [%s] 的登陆验证未通过, 发送至Sub-Reactor\n", logReq.name);
+        DBG("Master Reactor: 用户名为 [%s] 的登陆验证未通过, 退出\n", logReq.name);
         std::cout << "usr ["<< logReq.name << "] " << "登陆失败" << std::endl;
         close(client_fd);
         DBG("Master Reactor: 线程正常退出\n");

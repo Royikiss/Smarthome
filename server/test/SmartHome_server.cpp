@@ -46,7 +46,7 @@ int main() {
         // 从反应堆
         close(bridge[1]);
         int clients[MAX_EVENTS];                    // 哈希,记录当前打开的文件描述符,0号位置记录最大值
-        Cgo::thread_pool pool(6);                   // 线程池
+        Cgo::thread_pool pool(5);                   // 线程池
         epoll_event ev, events[MAX_EVENTS];         // 事件
         UsrMsg tusg;                                // 从主反应堆发来的数据
         std::map<std::string, int> u2f;             // 用户名与文件描述符的对应关系
@@ -118,7 +118,7 @@ int main() {
         // 主反应堆
         DBG("主反应堆启动中...\n");
         close(bridge[0]);
-        Cgo::thread_pool login_pool(3);
+        Cgo::thread_pool login_pool(2);
         int server, client;
         if ((server = socket_create(8081)) < 0) {
             perror("create_socket");
